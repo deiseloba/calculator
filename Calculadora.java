@@ -1,4 +1,4 @@
-package br.com.dio.calculador;
+package br.com.dio;
 
 import java.util.Scanner;
 
@@ -7,33 +7,37 @@ public class Calculadora {
 	
 	public static void main(String[] args) {
           Scanner scan = new Scanner(System.in);
-          int  a, b;
+          double a, b;
           
           System.out.println("Digite o primeiro valor:   " );
-          a  = scan.nextInt();
+          a  = scan.nextDouble();
           System.out.println("Digite o segundo valor:    ");
-          b = scan.nextInt();
-          
-          int soma = soma(a,b);
-          int subtracao = subtracao(a,b);
-           int multiplicacao = multiplicacao(a,b);
-          int divisao = divisao(a,b);
-          
+          b = scan.nextDouble();
+
+        double soma = soma( double a, double b);
+        double subtracao = subtracao( double a,double b );
+        double multiplicacao = multiplicacao( double a, double b) ;
+        double divisao = divisao( double a, double b) ;
+
           System.out.println(soma);
           System.out.println(subtracao);
           System.out.println(multiplicacao);
           System.out.println(divisao);
 	}
-     public static int soma(int  a,int  b )       {
-    	 return a + b;
+     public static double soma(double  a,double b )       {
+
+        return a + b;
      }	 
-    	 public static int subtracao(int  a,  int  b )       {
-    		 return a - b;
+    	 public static double subtracao(double a,  double b )       {
+
+        return a - b;
     	 }	 
-    		 public static int divisao(int  a,  int  b )       {
-    			 return a / b;
+    		 public static double divisao(double a,  double b )       {
+
+        return a / b;
     		 }		 
-    			 public static int multiplicacao(int  a,  int  b )       {
-    				 return a * b;
+    			 public static double multiplicacao(double a,  double  b )       {
+
+        return a * b;
      }
 }
